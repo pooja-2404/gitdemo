@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta name="author" content="Pooja">
+        <meta name=""description" content=""this page contains whatever i learn in html>
+        <title>
+            Welcome to first page
+
+        </title>
+        <!-- This is to set the icon at the title  -->
+        <link rel="icon" href="sai.jpg">
+        <!-- to apply style from a css file
+        <link rel="stylesheet" href="a.css" -->
+    </head>
+    <body>
+        <article>
+            
+            <form action="https://www.google.com/" method="get">
+                <fieldset>
+                <legend>Personal info</legend>
+               <p> <label for="firstname"> Firstname:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="first name" autocomplete="'on" required autofocus><br></p>
+                <p><label for="lastname"> Lastname:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="last name" autocomplete="'on" required autofocus><br></p>
+                <p><label for="password"> password:</label>
+                    <input type="password" name="password" id="password" placeholder="secet" autocomplete="'on" required autofocus></p>
+                    <!-- <p>
+                        <label for="phone"> Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="555-555-5555"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>                        
+                    </p> -->
+                    <p>
+                        <label for="decade"> favourite decade:</label>
+                        <input type="number" name= "decade" id="decade" placeholder="decade" min="1950" max="2022"><br>
+                    
+                    </p>
+                    <p>
+                        <label for="coffee"> Favourite Coffee:</label>
+                       <select name="coffee" id="coffee">
+                        <optgroup label="coffee">
+                        <option value="regular coffee">Regular Coffee</option>
+                        <option value="iced coffee">Iced Coffee</option>
+                        <option value="latte">Latte</option>
+                    </optgroup>
+                    <optgroup label="espresso drinks">
+                        <option value="nescafe ">nescafe</option>
+                        <option value="americano">Americano</option>
+                    </optgroup>
+                       </select>
+                        
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>favourite food</legend>
+                    <p>
+                        <p><input type="radio" name="food" id="tacos" value="tacos">
+                            <label for="tacos">Tacos</label></p>
+                        <p><input type="radio" name="food" id="pizza" value="pizza">
+                            <label for="pizza">Pizza</label></p>
+                        <p><input type="radio" name="food" id="burger" value="burger">
+                            <label for="burger">Burger</label></p>
+                        <p><input type="radio" name="food" id="Chowmine" value="Chowmine">
+                            <label for="Chowmine">Chowmine</label></p>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Do yoy have pets?</legend>
+                    <p><input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label></p>
+                    <p><input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">cat</label></p>
+                    <p><input type="checkbox" name="pets" id="rabbit" value="rabbit">
+                        <label for="rabbit">rabbit</label></p>
+                    <p><input type="checkbox" name="lion" id="lion" value="lion">
+                        <label for="lion">lion</label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="30" placeholder="type your message here"></textarea>
+
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="subit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="Reset">Reset</button>
+<!-- 
+
+                    <p>
+                        <label for="coffee">Favourite Coffee</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="nescafe"></option>
+                            <option value="iced coffee"></option>
+                            <option value="regular coffee"></option>
+                            <option value="latte"></option>
+                            <option value="espresso"></option>
+                            <option value="americano"></option>
+                        </datalist>
+                    </p> -->
+            </form>
+        </article>
+    </body>
+</html>
